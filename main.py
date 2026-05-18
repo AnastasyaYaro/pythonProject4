@@ -15,6 +15,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.get("/", response_class=HTMLResponse))))
+
 async def home(request: Request, db: Session = Depends(get_db)):
     rows = db.query(UserForm).order_by(UserForm.id.desc()).all()
     return templates.TemplateResponse(
@@ -22,7 +23,7 @@ async def home(request: Request, db: Session = Depends(get_db)):
         {"request": request, "rows": rows},
     )
 
-
+tryrtutyutyi
 @app.post("/submit")
 async def submit_form(
     request: Request,
