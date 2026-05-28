@@ -23,8 +23,7 @@ async def home(request: Request, db: Session = Depends(get_db)):
         {"request": request, "rows": rows},
     )
 
-уауеуеаавываы
-ываывпеуфнркерфу
+кпеуквреаонолнглнглгдгглнгонпарниынуеныуякерынвгешвитн
 
 @app.post("/submit")
 async def submit_form(
